@@ -33,19 +33,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //lined-icons -->
 </head> 
 <body>
+    <h1>${result}</h1>
 	<div class="main-wthree">
 	<div class="container">
 	<div class="sin-w3-agile">
+            <h1>${result}</h1>
 		<h2>Sign In</h2>
-		<form action="#" method="post">
+		<form action="login" method="post">
 			<div class="username">
 				<span class="username">Username:</span>
-				<input type="text" name="name" class="name" placeholder="" required="">
+				<input type="text" name="username" class="name" placeholder="Username" required="">
 				<div class="clearfix"></div>
 			</div>
 			<div class="password-agileits">
 				<span class="username">Password:</span>
-				<input type="password" name="password" class="password" placeholder="" required="">
+				<input type="password" name="password" class="password" placeholder="Password" required="">
 				<div class="clearfix"></div>
 			</div>
 			

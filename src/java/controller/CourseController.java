@@ -17,10 +17,31 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping(value = "/course")
 public class CourseController {
-
+    
+    /**
+     * Method listCourses() shows all courses
+     * @param mm
+     * @return 
+     */
     @RequestMapping(value = "/courses", method = RequestMethod.GET)
-    public String index(ModelMap mm) {
+    public String listCourses(ModelMap mm) {
         return "courses";
     }
-
+   /**
+    * 
+    * @param mm
+    * @return 
+    */
+    @RequestMapping (value="/edit",method = RequestMethod.GET)
+    public String editCourse(ModelMap mm)
+    {
+        return "courses";
+        
+    }
+    @RequestMapping (value="/delete",method = RequestMethod.DELETE)
+    public String deleteCourse(ModelMap mm)
+    {
+        return "courses";
+    }
+    
 }
