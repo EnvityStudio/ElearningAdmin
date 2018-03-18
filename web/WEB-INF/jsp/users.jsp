@@ -10,7 +10,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Courses</title>
+  <title>Users</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -26,6 +26,7 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../resources/css/skins/_all-skins.min.css">
+     <script language="JavaScript" type="text/javascript"  src="../resources/js/delete.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -334,28 +335,27 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
+                <h1>${result}</h1>
               <table id="example2" class="table table-bordered table-hover">
                 <thead>
                 <tr style="text-align:center">
-                  <th style="text-align:center">Stt</th>
-                  <th style="width: 100px;text-align:center">Tên khóa học</th>
-                  <th style="width: 400px;text-align:center">Mô tả</th>
-                  <th style="text-align:center">Người đăng ký</th>                 
-                  <th style="text-align:center">Hình ảnh</th>
-                  <th style="text-align:center">Tổng thời gian</th>
-                  <th style="text-align:center">Chức năng</th>
+                  <th style="text-align:center">Id</th>
+                  <th style="text-align:center">Name</th>
+                  <th style="text-align:center">Email</th>
+                  <th style="text-align:center">Phone</th>                 
+                  <th style="text-align:center">Address</th>
+                  <th style="text-align:center">Function</th>
                 </tr>
                 </thead>
                 <tbody>
-               <c:forEach items= "${listcourse}" var="course">
+               <c:forEach items= "${listuser}" var="user">
                 <tr>
-                  <td>${course.getIdcourse()}</td>                  
-                  <td>${course.getName()}</td>
-                  <td>${course.getDescription()}</td>
-                  <td style="text-align:center">${course.getSubcribers() }</td>
-                  <td style="text-align:center"><img width="100px" src="${course.getImage()}"/> </td>
-                  <td style="text-align:center">${course.getTotalTime()} h</td>
-                  <td style="text-align:center"><a href="product_edit.html">Sửa</a>  |  <a href="#">Xóa</a></td>
+                  <td style="text-align:center">${user.getIduser()}</td>                  
+                  <td style="text-align:center">${user.getName()}</td>
+                  <td style="text-align:center">${user.getEmail()}</td>
+                  <td style="text-align:center">${user.getPhone()} </td>
+                  <td style="text-align:center">${user.getAddress()} h</td>
+                  <td style="text-align:center"><a href="./delete?iduser=${user.getIduser()}"> <i class="fa fa-trash"></i></a></td>
                 </tr>
                </c:forEach>
               

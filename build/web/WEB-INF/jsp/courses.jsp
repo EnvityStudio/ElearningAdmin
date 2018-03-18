@@ -46,9 +46,9 @@
      <!-- Logo -->
     <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>VIỆT NHẬT</b></span>
+      <span class="logo-mini"><b>Elearning - Admin</b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>VIỆT NHẬT</b></span>
+      <span class="logo-lg"><b>Elearning - Admin</b></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -336,14 +336,14 @@
             <div class="box-body">
               <table id="example2" class="table table-bordered table-hover">
                 <thead>
-                <tr>
-                  <th>Stt</th>
-                  <th>Tên khóa học</th>
-                  <th>Mô tả</th>
-                  <th>Người đăng ký</th>                 
-                  <th>Hình ảnh</th>
-                  <th>Tổng thời gian</th>
-                  <th>Chức năng</th>
+                <tr style="text-align:center">
+                  <th style="text-align:center">Stt</th>
+                  <th style="width: 100px;text-align:center">Tên khóa học</th>
+                  <th style="width: 400px;text-align:center">Mô tả</th>
+                  <th style="text-align:center">Người đăng ký</th>                 
+                  <th style="text-align:center">Hình ảnh</th>
+                  <th style="text-align:center">Tổng thời gian</th>
+                  <th style="text-align:center">Chức năng</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -352,10 +352,10 @@
                   <td>${course.getIdcourse()}</td>                  
                   <td>${course.getName()}</td>
                   <td>${course.getDescription()}</td>
-                  <td>${course.getSubcribers() }</td>
-                  <td><img width="100px" src="${course.getImage()}"/> </td>
-                  <td>${course.getTotalTime()} h</td>
-                  <td><a href="product_edit.html">Sửa</a>  |  <a href="#">Xóa</a></td>
+                  <td style="text-align:center">${course.getSubcribers() }</td>
+                  <td style="text-align:center"><img width="100px" src="${course.getImage()}"/> </td>
+                  <td style="text-align:center">${course.getTotalTime()} h</td>
+                  <td style="text-align:center"><a href="product_edit.html">Sửa</a>  |  <a href="#">Xóa</a></td>
                 </tr>
                </c:forEach>
               
@@ -378,11 +378,7 @@
   </div>
   <!-- /.content-wrapper -->
     <footer class="main-footer">
-    
-      <b>Trung Tâm Đào Tạo Lập Trình Việt Nhật</b> 
-      <br/>  
-      <strong>Website: <a href="https://laptrinhvietnhat.com/"> https://laptrinhvietnhat.com</a></strong><br/> 
-    <strong>Hotline: 0168.257.3999</strong> 
+        <h1>Elearning - Admin Copy right @ 2018 all rights reserved</h1>
   </footer>
   
   <!-- Add the sidebar's background. This div must be placed

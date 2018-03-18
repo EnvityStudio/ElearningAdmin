@@ -11,7 +11,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Trang đăng nhập hệ thống</title>
+  <title>Login - Elearning Admin</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -37,14 +37,13 @@
 </head>
 <body class="hold-transition login-page">
 <div class="login-logo" style="padding-top:25px;">
-    <a style="font-family:arial;color:blue;" href="index.html"><b>Trung Tâm Đào Tạo Lập Trình Việt Nhật</b></a>
+    <a style="font-family:arial;color:blue;" href="index.html"><b>Elearing-Admin</b></a>
   </div>
 <div class="login-box">
   
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Trang đăng nhập hệ thống</p>
-
+    <h4 style="color: red">${result}</h4>
     <form action="login" method="post">
       <div class="form-group has-feedback">
         <input type="text" class="form-control" name ="username" placeholder="Username">
